@@ -1,0 +1,247 @@
+html, body {
+    width:100%;
+    height: 100%;
+    padding:0;
+    margin:0px;
+    font-family:'Oswald', sans-serif;
+    color:white;
+    text-shadow:3px 3px #000;
+    background:#000;
+}
+.container{
+    height: 100vh;
+    width:100%;
+    background: url(img/flags-2-borussia-dortmund-juventus-champions-league-18032015_83oqzmtsloaq1knx70xswkcbd.jpg);
+    background-position: center center;
+    background-size:cover;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+}
+.header {
+    width:100%;
+    height: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.header > p {
+    font-size:3.5rem;
+    font-weight: 900;
+}
+.stadium {
+    width:100%;
+    height: auto;
+    display:flex;
+}
+.stadium_photo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:45%;
+    position: relative;
+    text-align: center;
+    margin-left: 60px;
+}
+.stadium_photo > img {
+    width:70%;
+    border-radius:1%;
+}
+.stadium_overlay{
+    position: absolute;
+    background-color:#000;
+    width:70%;
+    height:auto;
+    top:0;
+    bottom:0;
+    left:15%;
+    right: 0;
+    border-radius:1%;
+    opacity:0;
+    transition: .5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:2rem;
+    text-shadow: none;
+}
+.stadium_photo:hover .stadium_overlay {
+    opacity:.7;
+}
+
+.about_stadium {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    flex-direction: column;
+}
+.wrapper_right{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+.about_trophy{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:2rem;
+    height: 4rem;
+}
+
+.trophy {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.coppa, .coppa2, .dellecoppa,.intecontinentale,
+.intertoto, .lm, .suppercoppa, .italiacoppa, .uefa {
+    transition: transform 0.2s ease-in-out;
+    opacity:.8;
+}
+.coppa:hover, .coppa2:hover, .dellecoppa:hover, .intecontinentale:hover, 
+.intertoto:hover, .lm:hover, .suppercoppa:hover, .italiacoppa:hover, .uefa:hover {    opacity: 1;
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+.logo{
+    width: 100%;
+    height: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxes{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+}
+.boxes > img{
+    height: 300px;
+}
+.boxes > h2 {
+    font-size:2rem;
+}
+.boxes > .fas{
+    margin-left:2rem;
+    font-size:4rem;
+}
+
+.ustawienie{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 400px;
+}
+.box1, .box2 {
+    width:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.8rem;
+    margin-top:4rem;
+    text-align: center;
+}
+.box2 > h2 {
+    margin-right:8rem;
+}
+.juve{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer {
+    display:flex;
+    flex-direction: column;
+    background: #000;
+    margin-top:5rem;
+}
+.description{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.social_media{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.description > p {
+    font-size:1.2rem;
+}
+b {
+    border-bottom:3px solid #fec72e;
+}
+.fas{
+    color:#fec72e;
+    margin-right: 10px;
+}   
+.far {
+    color:green;
+    margin-right: 10px;
+}
+.fab{
+    margin: 0 3rem 0 3rem;
+    font-size:2rem;
+}
+.fab:hover{
+    color:#fec72e; 
+    transition:.2s ease;
+}
+.juve > .fas {
+color:#fff;
+font-size: 3rem;
+padding:10px;
+}
+.juve > .fas:hover {
+    color:#fec72e;
+    transition: .3s ease;
+} 
+a:link , a:visited  , a:active {
+    text-decoration: none;
+    color:#fff;
+}
+
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
